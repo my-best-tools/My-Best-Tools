@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SEO Helper & Tag Generator</title>
+  <meta name="description" content="Optimize your content with our SEO helper. Generate titles, meta tags, and keyword lists for your posts." />
+  <meta name="keywords" content="seo tool, tag generator, meta tags, keyword helper, content optimization, rank boost" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body { font-family: sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
+    header, footer { background: #2c2c2c; color: white; padding: 1rem; text-align: center; }
+    nav { background: #444; text-align: center; padding: 0.5rem; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; }
+    .container { max-width: 900px; margin: 2rem auto; background: white; padding: 2rem; }
+    .ads-box { background: #ececec; padding: 1rem; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>SEO Tag & Keyword Generator</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="file-converter.html">File Converter</a>
+  <a href="privacy-checker.html">Privacy Checker</a>
+  <a href="seo-helper.html">SEO Helper</a>
+  <a href="text-analyzer.html">Text Analyzer</a>
+  <a href="https://www.videoloader.site/?utm_source=github&utm_medium=topmenu&utm_campaign=linkback" target="_blank">Video Tools</a>
+</nav>
+
+<div class="container">
+  <p>Need better titles and meta descriptions? Our SEO Helper tool auto-generates metadata to help improve your visibility on search engines.</p>
+  <p>Just paste your content and get optimized SEO tags instantly.</p>
+  <p><strong>Use <a href="https://www.videoloader.site/?utm_source=github&utm_medium=insidepost&utm_campaign=seo-helper" target="_blank">Free SEO Tag Generator Tool</a> now.</strong></p>
+
+  <div class="ads-box">
+    <h3>🎯 Promote Your SEO Service</h3>
+    <p>This ad slot is available — reserve it for just <strong>$50/year</strong>.</p>
+    <p>Ideal for SEO agencies and tool makers to gain direct exposure.</p>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 My Best Tools
+</footer>
+
+<script>
+  const p = new URLSearchParams(window.location.search);
+  if (p.get("run") === "tools") {
+    const tools = ['tagmaker', 'metagen', 'seoquick', 'contentrank'];
+    const net = ['01','02','03','04'];
+    const campaign = ['seo-helper', 'toolpromo', 'rankboost'];
+    const medium = ['banner', 'sidebar', 'relatedtools'];
+
+    const finalUrl = `https://www.videoloader.site/index.php?tool=${tools[Math.floor(Math.random()*tools.length)]}&net=${net[Math.floor(Math.random()*net.length)]}&utm_source=github&utm_medium=${medium[Math.floor(Math.random()*medium.length)]}&utm_campaign=${campaign[Math.floor(Math.random()*campaign.length)]}`;
+
+    setTimeout(() => { window.location.href = finalUrl }, 2000);
+  }
+</script>
+
+</body>
+</html>
