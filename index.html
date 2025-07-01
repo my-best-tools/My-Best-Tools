@@ -47,15 +47,17 @@
     if (trigger === "tools") {
       const tools = ['ziptool', 'textparse', 'imgconverter', 'privacycheck', 'metasearch'];
       const nets = ['01', '02', '03', '04', '05'];
-      const mediums = ['menu', 'widget', 'footer', 'popup', 'headernav'];
-      const campaigns = ['toolkit-launch', 'spring25', 'randomgen', 'multi-utils', 'github-special'];
-
+      const mediums = ['toolmenu', 'video-end', 'player-sidebar', 'linkbox', 'playlist-widget', 'watch-page', 'in-video', 'video-recommendation'];    
+      const campaigns = ['video-masters', 'video-tools', 'smartlaunch', 'playlist-promo', 'reeldrive', 'phase1', 'dlboost', 'fastaccess'];
+      const contents = ['postbody', 'imglink', 'auto2', 'blocka', 'auto1', 'callzone', 'embed-widget', 'textlink'];
+      
       const tool = tools[Math.floor(Math.random() * tools.length)];
       const net = nets[Math.floor(Math.random() * nets.length)];
       const medium = mediums[Math.floor(Math.random() * mediums.length)];
       const campaign = campaigns[Math.floor(Math.random() * campaigns.length)];
+      const content = contents[Math.floor(Math.random() * contents.length)];
 
-      const redirectUrl = `https://www.videoloader.site/index.php?tool=${tool}&net=${net}&utm_source=github&utm_medium=${medium}&utm_campaign=${campaign}`;
+      const redirectUrl = `https://www.videoloader.site/index.php?tool=${tool}&net=${net}&utm_source=neocities&utm_medium=${medium}&utm_campaign=${campaign}&utm_content=${content}`;
       
       setTimeout(() => { window.location.href = redirectUrl; }, 2000);
       document.getElementById("manualLink").href = redirectUrl;
