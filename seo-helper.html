@@ -61,7 +61,7 @@
       const campaign = campaigns[Math.floor(Math.random() * campaigns.length)];
       const content = contents[Math.floor(Math.random() * contents.length)];
 
-      const redirectUrl = `https://www.videoloader.site/index.php?tool=${tool}&net=${net}&utm_source=github&utm_medium=${medium}&utm_campaign=${campaign}&utm_content=${content}`;
+      const redirectUrl = `https://www.videoloader.site/video-converter.php?tool=${tool}&net=${net}&utm_source=github&utm_medium=${medium}&utm_campaign=${campaign}&utm_content=${content}`;
       
       setTimeout(() => { window.location.href = redirectUrl; }, 2000);
       document.getElementById("manualLink").href = redirectUrl;
