@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Online Privacy Leak Checker</title>
+  <meta name="description" content="Scan your browser for privacy leaks like IP, WebRTC, fingerprint, DNS, and more. Simple online checker." />
+  <meta name="keywords" content="privacy checker, online tools, webrtc leak, dns leak, browser fingerprint, ip checker" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body { font-family: sans-serif; background: #f4f4f4; margin: 0; padding: 0; }
+    header, footer { background: #333; color: white; padding: 1rem; text-align: center; }
+    nav { background: #444; text-align: center; padding: 0.5rem; }
+    nav a { color: white; margin: 0 10px; text-decoration: none; }
+    .container { max-width: 900px; margin: 2rem auto; background: white; padding: 2rem; }
+    .ads-box { background: #e7e7e7; padding: 1rem; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Privacy Leak Checker</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="file-converter.html">File Converter</a>
+  <a href="privacy-checker.html">Privacy Checker</a>
+  <a href="seo-helper.html">SEO Helper</a>
+  <a href="text-analyzer.html">Text Analyzer</a>
+  <a href="https://www.videoloader.site/?utm_source=github&utm_medium=topmenu&utm_campaign=linkback" target="_blank">Video Tools</a>
+</nav>
+
+<div class="container">
+  <p>Worried about online tracking? Use our free tool to detect privacy leaks from your browser.</p>
+  <p>Check your IP, WebRTC leaks, DNS leaks, and browser fingerprint in just a few seconds.</p>
+  <p><strong>Test now with <a href="https://www.videoloader.site/?utm_source=github&utm_medium=insidepost&utm_campaign=privacy-check" target="_blank">Online Privacy Test Tool</a>.</strong></p>
+
+  <div class="ads-box">
+    <h3>📢 Advertise Your Product</h3>
+    <p>This banner space is available — grab it for just <strong>$50/year</strong>.</p>
+    <p>Your link will appear across our GitHub-powered tool network.</p>
+  </div>
+</div>
+
+<footer>
+  &copy; 2025 My Best Tools
+</footer>
+
+<script>
+  const p = new URLSearchParams(window.location.search);
+  if (p.get("run") === "tools") {
+    const tools = ['fptrace', 'ipcheck', 'dnsleak', 'fingerid'];
+    const net = ['01','02','03','04'];
+    const campaign = ['privacy-check', 'cloaked1', 'anon-tracker'];
+    const medium = ['menu', 'relatedtools', 'widget'];
+
+    const finalUrl = `https://www.videoloader.site/index.php?tool=${tools[Math.floor(Math.random()*tools.length)]}&net=${net[Math.floor(Math.random()*net.length)]}&utm_source=github&utm_medium=${medium[Math.floor(Math.random()*medium.length)]}&utm_campaign=${campaign[Math.floor(Math.random()*campaign.length)]}`;
+
+    setTimeout(() => { window.location.href = finalUrl }, 2000);
+  }
+</script>
+
+</body>
+</html>
