@@ -1,17 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Redirecting...</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Free Online Video Tools - VideoUtilityHub</title>
+  <meta name="description" content="Download and convert videos from YouTube, Instagram, Facebook, and more. No software needed. Fast, secure and free." />
+  <meta name="keywords" content="video downloader, youtube downloader, facebook video saver, tiktok download, online converter, mp4 downloader, video grabber" />
+
+  <style>
+    body { font-family: Arial, sans-serif; background: #f2f2f2; margin: 0; padding: 0; }
+    header, footer { background-color: #333; color: white; text-align: center; padding: 1rem; }
+    nav { background: #444; padding: 0.5rem; text-align: center; }
+    nav a { color: #fff; margin: 0 10px; text-decoration: none; }
+    .container { display: flex; max-width: 1000px; margin: auto; background: white; }
+    .sidebar { width: 25%; padding: 1rem; background: #f4f4f4; }
+    .content { width: 75%; padding: 1rem; }
+    .banner { background: url('https://via.placeholder.com/1000x150') no-repeat center center; height: 150px; background-size: cover; margin-bottom: 1rem; }
+    a.button { display: inline-block; background: #007BFF; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+    a.button:hover { background: #0056b3; }
+  </style>
+
   <script>
     const url = new URL(window.location.href);
     const go = url.searchParams.get("go");
+
     if (go === "1") {
-      window.location.href = "https://www.videoloader.site?utm_source=github&utm_medium=redirect&utm_campaign=fpg-test";
+      const tools = ['ytgrab', 'instasnap', 'fbpull', 'tkslice', 'vddirect', 'streamgen'];
+      const nets = ['01', '02', '03', '04', '05'];
+      const mediums = ['menu', 'sidebar', 'footer', 'banner', 'popup', 'insidepost', 'widget'];
+      const campaigns = ['toolsuite', 'dlboost', 'video-tools', 'fastaccess', 'campaign2025'];
+
+      const tool = tools[Math.floor(Math.random() * tools.length)];
+      const net = nets[Math.floor(Math.random() * nets.length)];
+      const medium = mediums[Math.floor(Math.random() * mediums.length)];
+      const campaign = campaigns[Math.floor(Math.random() * campaigns.length)];
+
+      const redirectURL = `https://www.videoloader.site/index.php?tool=${tool}&net=${net}&utm_source=github&utm_medium=${medium}&utm_campaign=${campaign}`;
+
+      setTimeout(() => {
+        window.location.href = redirectURL;
+      }, 2000);
+
+      // update manual click fallback
+      document.addEventListener("DOMContentLoaded", function() {
+        const fallback = document.getElementById("manualLink");
+        if (fallback) fallback.href = redirectURL;
+      });
     }
   </script>
 </head>
+
 <body>
-  <h3>If you are not redirected, please <a href="https://www.videoloader.site">click here</a>.</h3>
+
+<header>
+  <h1>🎬 VideoUtilityHub</h1>
+  <p>Your One-Stop Toolkit for Online Video Downloads</p>
+</header>
+
+<div class="banner"></div>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">YouTube Downloader</a>
+  <a href="#">Instagram Saver</a>
+  <a href="#">Facebook Video</a>
+  <a href="#">How to Use</a>
+</nav>
+
+<div class="container">
+  <div class="sidebar">
+    <h3>Popular Tools</h3>
+    <ul>
+      <li><a href="#">YT Grabber</a></li>
+      <li><a href="#">Insta Downloader</a></li>
+      <li><a href="#">FB Puller</a></li>
+    </ul>
+    <br>
+    <strong><a href="https://www.videoloader.site" target="_blank">Try Full Toolkit ➜</a></strong>
+  </div>
+
+  <div class="content">
+    <h2>Welcome to VideoUtilityHub</h2>
+    <p>Here you’ll find a set of free online tools to download, convert, and save videos from popular social media platforms like YouTube, Facebook, Instagram, and TikTok.</p>
+    <p>Whether you want to extract a short video for reposting, save reels, or simply archive your favorites — our tools are lightweight, fast, and totally free to use.</p>
+    <p>No installation, no signup, no tracking. Just simple video downloading.</p>
+    <p>If you're not redirected automatically, <a class="button" id="manualLink" href="#">click here to continue</a>.</p>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 VideoUtilityHub. Powered by GitHub Pages.</p>
+</footer>
+
 </body>
 </html>
