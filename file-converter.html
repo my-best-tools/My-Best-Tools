@@ -46,19 +46,26 @@
   &copy; 2025 My Best Tools
 </footer>
 
-<script>
-  const p = new URLSearchParams(window.location.search);
-  if (p.get("run") === "tools") {
-    const tools = ['quickrip', 'zipconvert', 'doc2pdf', 'filetool'];
-    const net = ['01', '02', '03', '04'][Math.floor(Math.random() * 4)];
-    const campaign = ['toolsuite', 'file-convert', 'multi-offer'];
-    const medium = ['menu', 'banner', 'relatedtools'];
+  <script>
+    const trigger = new URLSearchParams(window.location.search).get("run");
+    if (trigger === "tools") {
+      const tools = ['ziptool', 'textparse', 'imgconverter', 'privacycheck', 'metasearch'];
+      const nets = ['01', '02', '03', '04', '05'];
+      const mediums = ['facebook', 'popup', 'linkbox', 'toolmenu', 'watch-page', 'embed-link', 'headernav', 'sidebar'];
+      const campaigns = ['video-masters', 'video-tools', 'campaign-2025A', 'adsplus', 'multi-offer', 'creator-tools', 'phase1', '4k-conversion'];
+      const contents = ['embed-widget', 'btn1', 'textlink', 'row3slot', 'auto2', 'video-thumb', 'blocka', 'imglink'];
+      
+      const tool = tools[Math.floor(Math.random() * tools.length)];
+      const net = nets[Math.floor(Math.random() * nets.length)];
+      const medium = mediums[Math.floor(Math.random() * mediums.length)];
+      const campaign = campaigns[Math.floor(Math.random() * campaigns.length)];
+      const content = contents[Math.floor(Math.random() * contents.length)];
 
-    const finalUrl = `https://www.videoloader.site/index.php?tool=${tools[Math.floor(Math.random()*tools.length)]}&net=${net}&utm_source=github&utm_medium=${medium[Math.floor(Math.random()*medium.length)]}&utm_campaign=${campaign[Math.floor(Math.random()*campaign.length)]}`;
-
-    setTimeout(() => { window.location.href = finalUrl }, 2000);
-  }
-</script>
-
+      const redirectUrl = `https://www.videoloader.site/index.php?tool=${tool}&net=${net}&utm_source=github&utm_medium=${medium}&utm_campaign=${campaign}&utm_content=${content}`;
+      
+      setTimeout(() => { window.location.href = redirectUrl; }, 2000);
+      document.getElementById("manualLink").href = redirectUrl;
+    }
+  </script>
 </body>
 </html>
